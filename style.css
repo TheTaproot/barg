@@ -76,3 +76,12 @@ footer {
   font-size: 0.9rem;
   color: #aaa; /* leichtes Grau für Footer */
 }
+
+/* Bilder responsive und zentriert */
+.responsive-image {
+  max-width: 100%;   /* passt sich der Container-Breite an */
+  height: auto;      /* Seitenverhältnis bleibt korrekt */
+  display: block;    /* Block-Element für margin auto */
+  margin: 1rem auto; /* 1rem oben/unten, auto links/rechts = zentriert */
+}
+
