@@ -1,4 +1,4 @@
-/* Reset and basic styles */
+/* Reset und Grundstile */
 * {
   margin: 0;
   padding: 0;
@@ -6,47 +6,57 @@
 }
 
 body {
-  background-color: #000;
-  color: #fff;
+  background-color: #000; /* schwarz */
+  color: #fff; /* weißer Text */
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   line-height: 1.6;
   display: flex;
-  justify-content: center; /* center the container horizontally */
+  justify-content: center; /* gesamte Seite horizontal zentrieren */
   padding: 20px;
 }
 
-/* Center the container but keep text left-aligned */
+/* Container für zentrierte Seite, Text linksbündig */
 .container {
   max-width: 800px;
   width: 100%;
   text-align: left;
 }
 
-/* Header, nav, and menu */
+/* Header, Navigation und Menü */
 header {
-  text-align: center; /* center menu and header section */
+  text-align: center; /* Menü und Header zentriert */
   margin-bottom: 2rem;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  justify-content: center; /* center the menu horizontally */
+  justify-content: center; /* Menü zentrieren */
   gap: 1rem;
   margin-bottom: 0.5rem;
 }
 
 nav a {
-  color: #fff;
-  text-decoration: none;
+  color: #FFA500; /* orange Links */
+  text-decoration: none; /* keine Unterstreichung */
   font-weight: bold;
 }
 
 nav a:hover {
+  text-decoration: underline; /* unterstreicht beim Hover */
+}
+
+/* Andere Links auf der Seite */
+a {
+  color: #FFA500; /* orange */
+  text-decoration: none;
+}
+
+a:hover {
   text-decoration: underline;
 }
 
-/* Horizontal lines */
+/* Horizontale Linien */
 hr {
   border: 0;
   height: 1px;
@@ -54,7 +64,7 @@ hr {
   margin: 1rem 0;
 }
 
-/* Main content */
+/* Hauptinhalt */
 main {
   margin-top: 1rem;
 }
@@ -64,5 +74,5 @@ footer {
   text-align: center;
   margin-top: 3rem;
   font-size: 0.9rem;
-  color: #aaa;
+  color: #aaa; /* leichtes Grau für Footer */
 }
