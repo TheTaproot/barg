@@ -3,31 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home - Minimal Site</title>
+  <title>Music - Minimal Site</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="music.html">Music</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <hr>
-    <h1>Home</h1>
-    <hr>
-  </header>
+  <div class="container">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">[Home]</a></li>
+          <li><a href="music.html">[Music]</a></li>
+          <li><a href="about.html">[About]</a></li>
+          <li><a href="contact.html">[Contact]</a></li>
+        </ul>
+      </nav>
+      <hr>
+      <h1>Music</h1>
+      <hr>
+    </header>
 
-  <main>
-    <p>Welcome to my minimal, privacy-focused website. All pages are lightweight, dark, and secure.</p>
-    <p>This template can be reused for all subpages: just change the &lt;h1&gt; header and main content.</p>
-  </main>
+    <main>
+      <p>Enjoy this track:</p>
+      <audio controls>
+        <source src="glee.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </main>
 
-  <footer>
-    <p>&copy; 2025 Minimal Site</p>
-  </footer>
+    <footer>
+      <p>&copy; 2025 Minimal Site</p>
+    </footer>
+  </div>
 </body>
 </html>
