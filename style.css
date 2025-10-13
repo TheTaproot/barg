@@ -79,7 +79,7 @@ footer {
 
 /* Bilder responsive und zentriert */
 .responsive-image {
-  max-width: 100%;   /* passt sich der Container-Breite an */
+  max-width: 50%;   /* passt sich der Container-Breite an */
   height: auto;      /* Seitenverhältnis bleibt korrekt */
   display: block;    /* Block-Element für margin auto */
   margin: 1rem auto; /* 1rem oben/unten, auto links/rechts = zentriert */
@@ -98,4 +98,5 @@ summary {
 summary::-webkit-details-marker {
   display: none; /* hides default arrow */
 }
+
 
