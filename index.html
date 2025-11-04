@@ -23,10 +23,10 @@
       <hr>
     </header>
 
-    <main>
-      <!-- Paste the YouTube lazy embed code here -->
+  <main>
+  <!-- Paste the YouTube lazy embed code here -->
   <div style="position: relative; width: 90%; max-width: 400px; margin: 1rem auto; cursor: pointer;">
-    <img src="https://img.youtube.com/vi/https://youtu.be/A5kq7cdO7Bo/hqdefault.jpg" 
+    <img src="https://img.youtube.com/vi/A5kq7cdO7Bo/hqdefault.jpg" 
          alt="YouTube Video" style="width:100%; display:block;">
     <div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%);
                 font-size:40px; color:white;">▶</div>
@@ -35,7 +35,7 @@
   <script>
     const container = document.querySelector('div[style*="cursor: pointer"]');
     container.addEventListener('click', function() {
-      const videoId = 'https://youtu.be/A5kq7cdO7Bo'; // replace with your YouTube ID
+      const videoId = 'A5kq7cdO7Bo'; // replace with your YouTube ID
       const iframe = document.createElement('iframe');
       iframe.setAttribute('src', `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1`);
       iframe.setAttribute('frameborder', '0');
@@ -47,13 +47,14 @@
       container.appendChild(iframe);
     });
   </script>
-    </main>
+</main>
 
     <footer>
     </footer>
   </div>
 </body>
 </html>
+
 
 
 
