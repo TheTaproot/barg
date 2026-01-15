@@ -33,28 +33,32 @@
       <p> <a href="https://bargband.de/music.html" target="_blank" rel="noopener noreferrer">passage</a> ep out now.
         <br> <br> <hr style="width: 50%; margin: auto; border: none; height: 2px; background-color: white;"><br>
   <!-- Paste the YouTube lazy embed code here -->
-  <div style="position: relative; width: 90%; max-width: 400px; margin: 1rem auto; cursor: pointer;">
-    <img src="https://img.youtube.com/vi/A5kq7cdO7Bo/hqdefault.jpg" 
-         alt="YouTube Video" style="width:100%; display:block;">
-    <div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%);
-                font-size:40px; color:white;">▶</div>
-  </div>
+ <div id="video" style="position: relative; width: 90%; max-width: 400px; margin: 1rem auto; cursor: pointer;">
+  <img id="video-thumb" 
+       src="https://img.youtube.com/vi/QKn3dh3INmM/hqdefault.jpg" 
+       alt="YouTube Video" style="width:100%; display:block;">
+  <div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%);
+              font-size:40px; color:white;">▶</div>
+</div>
 
-  <script>
-    const container = document.querySelector('div[style*="cursor: pointer"]');
-    container.addEventListener('click', function() {
-      const videoId = 'QKn3dh3INmM?si=bF6DxCBorA8kX69H'; // replace with your YouTube ID
-      const iframe = document.createElement('iframe');
-      iframe.setAttribute('src', `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1`);
-      iframe.setAttribute('frameborder', '0');
-      iframe.setAttribute('allowfullscreen', '');
-      iframe.setAttribute('allow', 'autoplay; encrypted-media');
-      iframe.style.width = '100%';
-      iframe.style.height = '225px';
-      container.innerHTML = '';
-      container.appendChild(iframe);
-    });
-  </script>
+<script>
+  const videoId = 'QKn3dh3INmM'; // 11-character YouTube ID
+  const container = document.getElementById('video');
+
+  container.addEventListener('click', () => {
+    const iframe = document.createElement('iframe');
+    iframe.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1`;
+    iframe.frameBorder = '0';
+    iframe.allow = 'autoplay; encrypted-media';
+    iframe.allowFullscreen = true;
+    iframe.style.width = '100%';
+    iframe.style.height = '225px';
+
+    // Replace the thumbnail + play button with the iframe
+    container.innerHTML = '';
+    container.appendChild(iframe);
+  });
+</script>
 </main>
 
       <footer style="text-align:center; font-size:0.8rem; margin-top:2rem; color:#888;">
@@ -72,6 +76,7 @@
   </div>
 </body>
 </html>
+
 
 
 
