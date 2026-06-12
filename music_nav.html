@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>barg.discography</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+
+    .grid a {
+      display: block;
+    }
+
+    .grid img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      display: block;
+    }
+
+    .grid img:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">[barg]</a></li>
+          <li><a href="music.html">[musik]</a></li>
+          <li><a href="live.html">[live]</a></li>
+          <li><a href="about.html">[wir]</a></li>
+          <li><a href="contact.html">[kontakt]</a></li>
+        </ul>
+      </nav>
+
+      <hr>
+      <h1>discography</h1>
+      <hr>
+    </header>
+
+    <main>
+
+      <div class="grid">
+
+        <a href="passage.html">
+          <img src="coverfront_passage.png" alt="passage">
+        </a>
+
+        <a href="album2.html">
+          <img src="cover_album2.jpg" alt="album 2">
+        </a>
+
+        <a href="album3.html">
+          <img src="cover_album3.jpg" alt="album 3">
+        </a>
+
+        <a href="album4.html">
+          <img src="cover_album4.jpg" alt="album 4">
+        </a>
+
+      </div>
+
+    </main>
+
+    <footer>
+      <p>&copy; 2025 barg musik</p>
+    </footer>
+
+  </div>
+</body>
+</html>
