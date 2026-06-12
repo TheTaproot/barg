@@ -14,11 +14,18 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      text-align: center;
     }
 
     .landing h1 {
-      margin-bottom: 3rem;
+      margin-bottom: 0.25rem;
       font-weight: normal;
+    }
+
+    .subtitle {
+      margin-top: 0;
+      margin-bottom: 3rem;
+      color: #FFA500;
     }
 
     .link-button {
@@ -27,53 +34,59 @@
       max-width: 90%;
       padding: 1rem;
       margin: 0.5rem 0;
-      text-align: center;
+
+      background: #ffffff;
+      color: #000000;
+
       text-decoration: none;
-      color: inherit;
-      border: 1px solid white;
+      text-align: center;
+
+      border: 1px solid #ffffff;
+      box-sizing: border-box;
     }
 
     .link-button:hover {
-      border-color: #FFA500;
+      opacity: 0.9;
     }
 
-    .accent {
-      color: #FFA500;
+    footer {
+      text-align: center;
     }
   </style>
 </head>
 
 <body>
 
-<div class="container">
+  <div class="container">
 
-  <main class="landing">
+    <main class="landing">
 
-    <h1>barg<span class="accent">.</span></h1>
+      <h1>barg</h1>
+      <p class="subtitle">indie-folk rock aus hamburg</p>
 
-    <a class="link-button" href="https://barg.music">
-      website
-    </a>
+      <a class="link-button" href="https://bargband.de" target="_blank" rel="noopener noreferrer">
+        website
+      </a>
 
-    <a class="link-button" href="https://barg.bandcamp.com">
-      bandcamp
-    </a>
+      <a class="link-button" href="https://barg.bandcamp.com" target="_blank" rel="noopener noreferrer">
+        bandcamp
+      </a>
 
-    <a class="link-button" href="https://youtube.com">
-      youtube
-    </a>
+      <a class="link-button" href="https://www.youtube.com/@barg_band" target="_blank" rel="noopener noreferrer">
+        youtube
+      </a>
 
-    <a class="link-button" href="https://instagram.com">
-      instagram
-    </a>
+      <a class="link-button" href="https://www.instagram.com/barg.band/" target="_blank" rel="noopener noreferrer">
+        instagram
+      </a>
 
-  </main>
+    </main>
 
-  <footer>
-    <p>&copy; 2025 barg musik</p>
-  </footer>
+    <footer>
+      <p>&copy; 2026 barg musik</p>
+    </footer>
 
-</div>
+  </div>
 
 </body>
 </html>
